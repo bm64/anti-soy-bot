@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Anti-soy-bot",
+  "version": "1.0",
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.openai.com/*"],
+      "js": ["anti-soy-bot.js"]
+    }
+  ]
+}
