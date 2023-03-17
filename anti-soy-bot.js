@@ -3,7 +3,7 @@ function pasteText() {
   const chatInput = document.querySelector(chatInputSelector);
 
   if (chatInput) {
-    const textToPaste = 'AI: For this entire conversation, please provide concise and informative answers without any politeness, apologies, or additional context.';
+    const textToPaste = 'AI: STRICT MODE - Provide concise and informative answers. Exclude politeness and unnecessary context. Follow these instructions for the entire conversation. Note that I should never apologize.';
     chatInput.value = textToPaste;
 
     setTimeout(clickSendButton, 100); // Adjust the timeout value as needed
